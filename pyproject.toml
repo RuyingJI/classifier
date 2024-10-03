@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "classifier-project"
+version = "0.1.0"
+description = "A Python project providing circular, linear, and Y-axis threshold classifiers for 2D data classification."
+author1 = ["German Andres Leonardo Urbina Guiterrez <german.guiterrez@etu.imt-nord-europe.fr>"]
+author2 = ["Ruying JI <ruying.ji@etu.imt-nord-europe.fr>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/yourusername/classifier-project"
+repository = "https://github.com/yourusername/classifier-project"
+keywords = ["classification", "machine learning", "data science", "2D classifiers"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.21.0"
+matplotlib = "^3.4.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+black = "^21.6b0"
+flake8 = "^3.9.2"
+mypy = "^0.910"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.flake8]
+max-line-length = 88
+exclude = ".git,__pycache__,build,dist"
+
+[tool.mypy]
+python_version = 3.8
+strict = true
