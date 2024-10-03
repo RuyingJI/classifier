@@ -20,12 +20,12 @@ def test_classification():
     X2 = np.random.randn(100, 2) + [30, 10]  # 类别 2 数据，均值为 (30, 10)
     X = np.vstack((X1, X2))  # 将两类数据点合并在一起，形成数据集
     y = np.hstack((np.ones(100), np.ones(100) * 2))  # 类别标签，前 100 个为 Class 1，后 100 个为 Class 2"""
-    loc1 = [20, 30]  # class 1 的均值 (x, y)
-    scale1 = [5, 5]  # class 1 的标准差 (x, y)
-    loc2 = [30, 10]  # class 2 的均值 (x, y)
-    scale2 = [5, 5]  # class 2 的标准差 (x, y)
-    size1 = (100, 2)  # class 1 生成 100 pts，(x,y)
-    size2 = (100, 2)  # class 2 生成 100 pts，(x,y)
+    loc1 = [20, 30] 
+    scale1 = [5, 5]  
+    loc2 = [30, 10]  
+    scale2 = [5, 5]  
+    size1 = (100, 2) 
+    size2 = (100, 2) 
     data_generator = cloud(loc1, scale1, loc2, scale2, size1, size2)
     X, y = data_generator.generate_data()
 

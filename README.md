@@ -1,6 +1,3 @@
-根据提供的代码和原有的 `README.md` 文件结构，我将其更新为包含更多的使用信息和示例。以下是改进后的 `README.md`：
-
----
 
 # Classifier
 
@@ -105,8 +102,3 @@ This package is particularly useful for data scientists and developers working o
 The development of this project was inspired and supported by the team at IMT Nord Europe.
 
 --- 
-
-### 改进点：
-1. **添加了详细的示例代码**，展示如何使用不同的分类器。
-2. **介绍了每个分类器的参数和优化方法**，帮助用户理解如何调整分类器的行为。
-3. **添加了结果可视化的说明**，解释如何使用 `plot` 方法保存结果图像。
